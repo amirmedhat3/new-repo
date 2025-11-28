@@ -1,0 +1,19 @@
+{
+  "name": "jenkins-node-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --coverage",
+    "lint": "eslint . || true",
+    "ci": "npm install && npm test && npm run lint"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "supertest": "^6.0.0",
+    "eslint": "^8.0.0"
+  }
+}
