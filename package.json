@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node app.js",
     "test": "jest --coverage",
-    "lint": "eslint . || true",
+    "lint": "eslint .",
     "ci": "npm install && npm test && npm run lint"
   },
   "dependencies": {
@@ -19,7 +19,9 @@
     "jest": "^29.0.0",
     "supertest": "^6.0.0"
   },
-   "overrides": {
-    "formidable": "3.5.3"
+  "overrides": {
+    "formidable": "3.5.3",
+    "js-yaml": "4.1.1"
   }
 }
+
